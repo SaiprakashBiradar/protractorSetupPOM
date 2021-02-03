@@ -1,0 +1,6 @@
+{
+    "environment":"http://3.212.88.170:4000/",
+    "pageTitle":"New Movies: angular.movies",
+    "moviesShownInPage":12,
+    "searchMovie":"Charade"
+}
