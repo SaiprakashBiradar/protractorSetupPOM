@@ -30,7 +30,7 @@ describe('Rewaa Tech assignment suite', function() {
     homePage.clickOnFirstMovie();
     expect(moviePage.getValueOfMovieName()).toContain(testData.searchMovie);
   });
-  fit('verify breadcrumb shows options',function(){
+  it('verify breadcrumb shows options',function(){
     homePage.clickOnItemsList();
     homePage.verifyBreadcrumbOption();
   })

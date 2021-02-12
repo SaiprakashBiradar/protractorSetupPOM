@@ -8,8 +8,14 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "npm run test.local"
-  },
+    "pretest": "rm -rf allure-results",
+    "test": "protractor /Users/stockx/unifyMySetup/protractorSetup/config/conf.js",
+    "posttest": "allure generate allure-results --clean -o allure-report || true",
+    "wdm.start":"webdriver-manager start",
+    "wdm.update":"webdriver-manager update",
+    "wdm.stop":"webdriver-manager stop"
+
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sai1636/protractorSetupPOM.git"
