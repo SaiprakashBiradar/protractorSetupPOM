@@ -1,17 +1,26 @@
 {
-  "name": "protractorproject",
+  "name": "protractor-pom-setup",
   "version": "1.0.0",
-  "description": "Rewaa tech project",
-  "main": "conf.js",
-  "scripts": {
-    "pretest": "rm -rf allure-results",
-    "test": "protractor /Users/stockx/unifyMySetup/protractorSetup/config/conf.js",
-    "posttest": "allure generate allure-results --clean -o allure-report || true",
-    "wdm.start":"webdriver-manager start"
-  },
-  "author": "sai",
-  "license": "UNLICENSED",
+  "description": "protractor setup with pom",
+  "main": "/Users/stockx/unifyMySetup/protractorSetup/config/conf.js",
   "dependencies": {
     "jasmine-allure-reporter": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test.local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sai1636/protractorSetupPOM.git"
+  },
+  "keywords": [
+    "abc"
+  ],
+  "author": "sai",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sai1636/protractorSetupPOM/issues"
+  },
+  "homepage": "https://github.com/sai1636/protractorSetupPOM#readme"
 }
